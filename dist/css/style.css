@@ -1,34 +1,193 @@
 
 
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: ProximaNovaExtraBold, Verdana, sans-serif;
+}
+
 body {
-  color: blue;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background: -webkit-linear-gradient(45deg, #666, #666);
-  background: -o-linear-gradient(45deg, #666, #666);
-  background: linear-gradient(45deg, #666, #666);
+  width: 100%;
+  max-width: 1920px;
+  min-width: 320px;
+  position: relative;
+  margin-top: 108px;
+  text-align: center;
 }
 
-h1 {
-  color: blue;
+.wrapper {
+  max-width: 1700px;
+  margin: 0 auto;
 }
 
-p {
-  color: green;
-  background: -webkit-linear-gradient(45deg, #ccc, #666);
-  background: -o-linear-gradient(45deg, #ccc, #666);
-  background: linear-gradient(45deg, #ccc, #666);
+.header {
+  width: 100%;
+  max-width: 1700px;
+  height: 108px;
+  position: fixed;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #fff), to(rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(top, #fff 70%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(top, #fff 70%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, #fff 70%, rgba(255, 255, 255, 0) 100%);
+  z-index: 5;
 }
 
-h2 {
-  height: 100px;
+.header__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 75px;
+  height: 100%;
 }
 
-h5 {
-  width: 100px;
+.logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
 }
 
-.cls {
+.logo__text {
+  margin-left: 12px;
+  line-height: 22px;
+  font-size: 1.1em;
+  color: #000;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__item {
+  list-style-type: none;
+  margin-left: 54px;
+  padding-top: 16px;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  position: relative;
+}
+
+.menu__item--active {
+  color: #20aa97;
+}
+
+.menu__item--active:before {
+  background: red;
+  content: '';
+  width: 15px;
+  height: 2px;
+  position: absolute;
+  top: 0px;
   background: #000;
-  color: red;
+  color: #20aa97;
+}
+
+.menu__item:hover {
+  cursor: pointer;
+  color: #20aa97;
+}
+
+.section__title {
+  position: relative;
+  padding: 120px 0;
+  text-align: center;
+  font-size: 5.5em;
+}
+
+.section__title--colorful {
+  position: absolute;
+  font-size: 1em;
+  color: #20aa97;
+}
+
+.section__description {
+  margin: 0 387px;
+  color: #585858;
+}
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.container__box {
+  width: 15%;
+  margin: 100px 30px 0;
+}
+
+.box-service__img {
+  width: 100px;
+  height: 80px;
+  margin: 0 auto 50px auto;
+  background-image: url("../img/sprite-services.svg");
+  background-position: 10px 0;
+}
+
+.box-service__slim-text {
+  color: #585858;
+  font-family: ProximaNovaSemiBold;
+}
+
+.box-service .service-2 {
+  background-position: -165px 0;
+}
+
+.box-service .service-3 {
+  background-position: -260px 0;
+}
+
+.box-service .service-4 {
+  background-position: -350px 0;
+}
+
+.box-service .service-5 {
+  background-position: -450px 0;
+}
+
+.box-service .service-6 {
+  background-position: -550px 0;
+}
+
+.box-service .service-7 {
+  background-position: -640px 0;
+}
+
+.box-service .service-8 {
+  background-position: -725px 0;
+}
+
+.box-service .service-9 {
+  background-position: -828px 0;
+}
+
+.box-service .service-10 {
+  background-position: -75px 0;
 }

@@ -1,30 +1,145 @@
-$main-color: #666;
+$main-font: ProximaNovaExtraBold, Verdana, sans-serif;
+$main-color: #20aa97;
+$description-color: #585858;
+$main-font-size: 18px;
 
+*{
+	margin: 0;
+	padding: 0;
+	font-size: $main-font-size;
+	font-family: $main-font;
+}
 body{
-	color: blue;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	background: linear-gradient(45deg, $main-color, #666); 
-
+	width: 100%;
+	max-width: 1920px;
+	min-width: 320px;
+	position: relative;
+	margin-top: 108px;
+	text-align: center;
 }
-h1{
-	color: blue;
+.wrapper{
+	max-width: 1700px;
+	margin: 0 auto;
+}
+.header{
+	width: 100%;
+	max-width: 1700px;
+	height: 108px;
+	position: fixed;
+	top: 0;
+	background: linear-gradient(180deg, #fff 70%, rgba(255,255,255, 0) 100%);
+	z-index: 5;
+	&__container{
+		display: flex;
+		justify-content: space-between;
+		padding: 0 75px;
+		height: 100%;
+	}
+}
+.logo{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	&__text{
+		margin-left: 12px;
+		line-height: 22px;
+		font-size: 1.1em;
+		color: #000;
+	}
+}
+.menu{
+	display: flex;
+	align-items: center;
+	&__item{
+		list-style-type: none;
+		margin-left: 54px;
+		padding-top: 16px; 
+		transition: .2s;
+		position: relative;
+		&--active{
+			color: $main-color;
+			&:before{
+				background: red;
+				content: '';
+				width: 15px;
+				height: 2px;
+				position: absolute;
+				top: 0px;
+				background: #000;
+				color: $main-color;
+			}
+		}
+		&:hover{
+			cursor: pointer;
+			color: $main-color;
+		}
+	}
+}
+.section{
+	&__title{
+		position: relative;
+		padding: 120px 0;
+		text-align: center;
+		font-size: 5.5em;
+		&--colorful{
+			position: absolute;
+			font-size: 1em;
+			color: $main-color;
+		}
+	}
+	&__description{
+		margin: 0 387px;
+		color: $description-color;
+	}
+}
+.container{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	&__box{
+		width: 15%;
+		margin: 100px 30px 0;
+
+	}
+}
+.box-service{
+	&__img{
+		width: 100px;
+		height: 80px;
+		margin: 0 auto 50px auto;
+		background-image: url("../img/sprite-services.svg");
+		background-position: 10px 0;
+	}
+	&__slim-text{
+		color: $description-color;
+		font-family: ProximaNovaSemiBold;
+	}
+	.service-2{
+		background-position: -165px 0;
+	}
+	.service-3{
+		background-position: -260px 0;
+	}
+	.service-4{
+		background-position: -350px 0;
+	}
+	.service-5{
+		background-position: -450px 0;
+	}
+	.service-6{
+		background-position: -550px 0;
+	}
+	.service-7{
+		background-position: -640px 0;
+	}
+	.service-8{
+		background-position: -725px 0;
+	}
+	.service-9{
+		background-position: -828px 0;
+	}
+	.service-10{
+		background-position: -75px 0;
+	}
 }
 
-p{
-	color: green;
-	background: linear-gradient(45deg, #ccc, #666); 
-
-}
-
-h2{
-	height: 100px;
-}
-
-h5{
-	width: 100px;
-}
-
-.cls{
-	background: #000;
-	color: red;
-}
