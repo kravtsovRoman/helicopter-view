@@ -38,7 +38,7 @@ body{
 	&__container{
 		display: flex;
 		justify-content: space-between;
-		padding: 0 75px;
+		padding: 0 70px;
 		height: 100%;
 	}
 }
@@ -48,11 +48,13 @@ body{
 	text-decoration: none;
 	&__img{
 		width: 56px;
+		margin: 5px 0 0 12px;
 	}
 	&__text{
-		margin-left: 15px;
+		margin: 7px 0 0 13px;
 		line-height: 22px;
 		font-size: 20px;
+		text-align: left;
 		color: #000;
 	}
 }
@@ -60,12 +62,13 @@ body{
 	display: flex;
 	align-items: center;
 	&__item{
-		margin-left: 54px;
-		padding-top: 16px; 
+		margin-left: 55px;
+		padding-top: 13px; 
 		transition: all .3s;
 		position: relative;
 		list-style-type: none;
 		font-size: 16px;
+		letter-spacing: 0.1px;
 		z-index: 999;
 		&--active,
 		&:hover{
@@ -89,7 +92,7 @@ body{
 .section{
 	&__title{
 		position: relative;
-		padding: 120px 0;
+		padding: 113px 5px 90px 0;
 		text-align: center;
 		font-size: 100px;
 		&--colorful{
@@ -99,9 +102,10 @@ body{
 		}
 	}
 	&__description{
-		margin: 0 387px;
+		margin:0 370px 16px 385px;
 		font-size: 1.1em;
 		line-height: 36px;
+		letter-spacing: 0.1px;
 		color: $description-color;
 	}
 }
@@ -110,56 +114,61 @@ body{
 	justify-content: center;
 	flex-wrap: wrap;
 	&__box{
-		width: 16%;
-		margin: 130px 25px 0;
+		width: 15%;
+		margin: 95px 21px 0 50px;
 	}
 }
 .services-container{
-	padding:  0 110px;
+	padding:  0 35px;
 }
 .box-service{
 	&__img{
-		width: 100px;
+		width: 110px;
 		height: 80px;
 		margin: 0 auto 50px auto;
-		background-image: url("../img/sprite-services.svg");
-		background-position: 10px 0;
+		background-image: url("../img/sprite_services.svg");
+		background-position: -7px -20px;
+	}
+	&__text{
+		width: 235px;
+		letter-spacing: 1px;
+		line-height: 23px;
 	}
 	&__slim-text{
 		color: $description-color;
 		font-family: ProximaNovaSemiBold;
 	}
 	.service-2{
-		background-position: -165px 0;
+		background-position: -267px -19px;
 	}
 	.service-3{
-		background-position: -260px 0;
+		background-position: -398px -19px;
 	}
 	.service-4{
-		background-position: -350px 0;
+		background-position: -528px -19px;
 	}
 	.service-5{
-		background-position: -450px 0;
+		background-position: -669px -19px;
 	}
 	.service-6{
-		background-position: -550px 0;
+		background-position: -816px -23px;
 	}
 	.service-7{
-		background-position: -640px 0;
+		background-position: -947px -23px;
 	}
 	.service-8{
-		background-position: -725px 0;
+		background-position: -1066px -23px;
 	}
 	.service-9{
-		background-position: -828px 0;
+		background-position: -1208px -19px;
 	}
 	.service-10{
-		background-position: -75px 0;
+		background-position: -133px -23px;
 	}
 }
 
 .offer-title{
-	padding: 150px 0 40px 0;
+	padding: 100px 0 34px 5px;
 	font-size: 60px;
 	line-height: 28px;
 }
@@ -179,48 +188,56 @@ body{
 	&__title{
 		line-height: 28px;
 		font-size: 20px;
+		margin: 46px 0 0 14px;
 	}
 	&__text{
 		color: $description-color;
-		line-height: 28px;
+		line-height: 24px;
+		margin: 2px 0 0 14px;
+
+
+
 	}
 	&__img{
 		width: 107px;
 		height: 107px;
 		border-radius: 50%;
 		background-color: #d3f3f3;
-		margin-bottom: 45px;
+		margin-bottom: 36px;
+		margin-left: 15px;
 		background: url("../img/sprite_offer.svg") no-repeat, #fbfdfd;
-		background-position: 20px 20px;
+		background-position: 0 9px;
+		background-size: 750px;
 	}
 	.offer-2{
-		background-position: -80px 20px;
+		background-position: -110px 12px;
 	}
 	.offer-3{
-		background-position: -192px 25px;
+		background-position: -219px 16px;
 	}
 	.offer-4{
-		background-position: -305px 25px;
+		background-position: -331px 14px;
 	}
 	.offer-5{
-		background-position: -410px 20px;
+		background-position: -434px 11px;
 	}
 	.offer-6{
-		background-position: -507px 20px;
+		background-position: -536px 9px;
 	}
 	.offer-7{
-		background-position: -610px 20px;
+		background-position: -640px 3px;
 	}
 }
 .footer{
 	height: 120px;
-	margin-top: 135px;
+	margin-top: 105px;
 	background: #000;
 	color: #fff;
 	&__text{
-		padding-top: 60px;
-		font-size: 0.8em;
+		padding-top: 50px;
+		font-size: 14px;
 		line-height: 22px;
+		margin-left: 25px;
 		&--colorful{
 			text-decoration: none;
 			color: $main-color;
