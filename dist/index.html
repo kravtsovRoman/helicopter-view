@@ -12,10 +12,16 @@
 	
 </head>
 <body>
-	<div class="circle">
-		<img src="img/Ellipse.png" alt="">
+	<div class="container-lines">
+		<span class="line-1"></span>
+		<span class="line-2"></span>
+		<span class="line-3"></span>
+		<span class="line-4"></span>
 	</div>
 	<div class="wrapper">
+		<div class="circle">
+			<img src="img/Ellipse.png" alt="">
+		</div>
 		<header class="header">
 			<div class="header__container">
 				<a class="header__logo logo" href="index.html" >
@@ -25,15 +31,34 @@
 						view.
 					</p>
 				</a>
-				<ul class="header__menu menu">
-					<li class="menu__item">about us.</li>
-					<li class="menu__item menu__item--active">service.</li>
-					<li class="menu__item">out projectts.</li>
-					<li class="menu__item">process.</li>
-					<li class="menu__item">faq.</li>
-					<li class="menu__item">blog.</li>
-					<li class="menu__item">contacts.</li>
+				<ul class="header__menu menu-desktop">
+					<li class="menu-desktop__item">about us.</li>
+					<li class="menu-desktop__item menu-desktop__item--active">service.</li>
+					<li class="menu-desktop__item">out projectts.</li>
+					<li class="menu-desktop__item">process.</li>
+					<li class="menu-desktop__item">faq.</li>
+					<li class="menu-desktop__item">blog.</li>
+					<li class="menu-desktop__item">contacts.</li>
 				</ul>
+				<div class="menu-mobile">
+					<input type="checkbox" class="menu-mobile__checkbox" id="burger">
+					<label for="burger" class="menu-mobile__label">
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+					
+					<div class="nav-mobile">
+						<a href="#" class="nav-mobile__item">about us.</a>
+						<a href="#" class="nav-mobile__item menu__item--active">service.</a>
+						<a href="#" class="nav-mobile__item">out projectts.</a>
+						<a href="#" class="nav-mobile__item">process.</a>
+						<a href="#" class="nav-mobile__item">faq.</a>
+						<a href="#" class="nav-mobile__item">blog.</a>
+						<a href="#" class="nav-mobile__item">contacts.</a>
+					</div>
+
+				</div>
 			</div>
 		</header>
 		<main>
@@ -145,7 +170,7 @@
 				<h2 class="section__title offer-title">our offer
 					<span class="section__title--colorful">.</span>
 				</h2>
-				<div class="container offen-container">
+				<div class="container offer-container">
 					<div class="box-our-offer">
 						<div class="box-our-offer__img"></div>
 						<div class="box-our-offer__title">100% Clear-Cut Hit</div>

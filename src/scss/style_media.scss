@@ -1,0 +1,200 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media screen and (max-width : 1200px) {
+	.menu-desktop{
+		&__item{
+			margin-left: 20px;
+		}
+	}
+	.circle{
+		top: -240px;
+    	right: -175px;
+	}
+	.section {
+		&__description{
+			margin: 0 150px 16px 150px;
+		}
+		.container__box{
+			width: 20%;
+			margin: 95px 30px 0 30px;
+		}
+	}
+	.box-our-offer{
+		width: 35%;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media screen and (max-width : 992px) {
+	.header{
+		&__container{
+			padding: 0 15px;
+		}
+	}
+	.menu-desktop{
+		&__item{
+			margin-left: 10px;
+		}
+	}
+	.section {
+		&__description{
+			margin: 0 100px 16px 100px;
+		}
+		.container__box{
+			width: 30%;
+			margin: 95px 30px 0 30px;
+		}
+	}
+	.offer-container{
+		flex-direction: column;
+		.box-our-offer{
+			padding: 60px 70px 0 70px;
+			width: 50%;
+			&:nth-child(2n){
+				padding: 60px 70px 0 70px;
+			}
+		}
+	}
+}
+
+/* Small Devices, Tablets */
+@media screen and (max-width : 768px) {
+	.menu-desktop{
+		display: none;
+	}
+	.menu-mobile{
+		display: block;
+		.nav-mobile{
+			display:none;
+		}
+	}
+	.logo{
+		&__img {
+		    width: 44px;
+		    margin: 5px 0 0 23px;
+		}
+		&__text{
+			margin: 7px 0 0 9px;
+			line-height: 17px;
+			font-size: 0.9em;
+		}
+	}
+	.section{
+		&__title {
+		    padding: 40px 0px 44px 0;
+		    font-size: 69px;
+		}
+		&__description {
+		    font-size: 1em;
+		    line-height: 30px;
+		    letter-spacing: 0.5px;
+		}
+		.services-container{
+			padding: 0;
+			width: 100%;
+			flex-direction: row;
+		}
+		.container__box{
+			width: 50%;
+			margin: 30px auto 0 auto;
+		}
+	}
+	.box-service{
+		&__img {
+			width: 135px;
+			height: 104px;
+			text-align: center;
+		    margin: 0 0 25px 150px;
+		    background-position: -11px -3px;
+		   }
+		   .service-2 {
+			    background-position: -259px -4px;
+			}
+			.service-3 {
+			    background-position: -398px 5px;
+			}
+			.service-4 {
+			    background-position: -524px 5px;
+			}
+			.service-5 {
+			    background-position: -669px -13px;
+			}
+			.service-6 {
+			    background-position: -805px -13px;
+			}
+			.service-7 {
+			    background-position: -940px -21px;
+			}
+			.service-8 {
+			    background-position: -1061px -21px;
+			}
+			.service-9 {
+			    background-position: -1208px -4px;
+			}
+			.service-10 {
+			    background-position: -130px -4px;
+			}
+		&__text{
+			margin: 0 auto;
+			letter-spacing: 0;
+			text-align: center;
+			line-height: 20px;
+			font-size: 21px;
+		}
+	}
+	.offer-title {
+	    padding: 100px 0px 44px 8px;
+	    font-size: 58px;
+	}
+	.offer-container{
+		.box-our-offer, 
+		.box-our-offer:nth-child(2n){
+			padding: 0px 70px 22px 70px;
+		}
+		.box-our-offer{
+			&__text{
+				line-height: 23px;
+			}
+			&__img{
+				background-position: 0 15px;
+			}
+			.offer-2{
+				background-position: -108px 13px;
+			}
+			.offer-3{
+				background-position: -219px 23px;
+			}
+			.offer-4{
+				background-position: -329px 28px;
+			}
+			.offer-5{
+				background-position: -434px 27px;
+			}
+			.offer-6{
+				background-position: -536px 4px;
+			}
+			.offer-7{
+				background-position: -640px 3px;
+			}
+		}
+	} 
+	.footer {
+    	height: 97px;
+    	margin-top: 63px;
+    	&__text {
+		    padding-top: 35px;
+		    font-size: 13px;
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media screen and (max-width : 320px) {
+
+}
