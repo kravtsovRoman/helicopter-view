@@ -15,9 +15,51 @@ body{
 	min-width: 320px;
 	position: relative;
 	text-align: center;
-	// box-sizing: border-box;
 	margin-top: 108px;
 	overflow-x:hidden;
+}
+.preloader{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 999;
+	transition: 1s all;
+	opacity: 1;
+	visibility: visible;
+	&.done{
+		opacity: 0;
+		visibility: hidden;
+	}
+	.loader{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		img{
+			padding-bottom: 10px;
+			animation: 3s preloader-img infinite linear;
+		}
+		p{
+			font-family: $main-font;
+			font-size: 0.9em;
+			.point{
+				display: inline-block;
+				animation: 1.5s preloader-text infinite linear;
+			}
+			.point-1{
+				animation-delay: .1s;
+			}
+			.point-2{
+				animation-delay: .2s;
+			}
+			.point-3{
+				animation-delay: .3s;
+			}
+		}	
+	}
 }
 .container-lines{
 	width: 100%;
@@ -48,6 +90,7 @@ body{
 		right: 28%;
 	}
 }
+
 .wrapper{
 	max-width: 1700px;
 	margin: 0 auto;
@@ -80,6 +123,8 @@ body{
 	display: flex;
 	align-items: center;
 	text-decoration: none;
+	animation: 1s menu-item  linear;
+	animation-delay: 2s;
 	&__img{
 		width: 56px;
 		margin: 5px 0 0 12px;
@@ -105,6 +150,9 @@ body{
 		font-size: 16px;
 		letter-spacing: 0.1px;
 		z-index: 999;
+		animation: 3s menu-item  linear;
+		animation-delay: 1s;
+
 		a{
 			text-decoration: none;
 			font-size: 16px;
@@ -238,6 +286,9 @@ body{
 	padding:  0 35px;
 }
 .box-service{
+	&:hover .box-service__text{
+		text-shadow: 7px 7px 4px rgba(150, 150, 150, 1);
+	}
 	&__img{
 		width: 110px;
 		height: 80px;
@@ -249,6 +300,7 @@ body{
 		width: 235px;
 		letter-spacing: 1px;
 		line-height: 23px;
+		transition: all .3s;
 	}
 	&__slim-text{
 		color: $description-color;
@@ -298,6 +350,10 @@ body{
 	width: 45%;
 	text-align: left;
 	padding: 60px 60px 0 0;
+	&:hover .box-our-offer__title{
+		transform: scale(1.08);
+		color: #000;
+	}
 	&:nth-child(2n){
 		padding: 60px 0 0 60px;
 	}
@@ -305,14 +361,12 @@ body{
 		line-height: 28px;
 		font-size: 20px;
 		margin: 46px 0 0 14px;
+		transition: all .5s;
 	}
 	&__text{
 		color: $description-color;
 		line-height: 24px;
 		margin: 2px 0 0 14px;
-
-
-
 	}
 	&__img{
 		width: 107px;

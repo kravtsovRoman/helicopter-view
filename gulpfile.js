@@ -17,13 +17,14 @@ var gulp = require('gulp'),
   });
 });
 
+
 // css
 gulp.task('css', function () {
   return gulp.src('src/scss/**/*.scss')
   	.pipe(sass().on('error', sass.logError))
     .pipe(concatCss("style.css")) 
     // Минифицировать css (продакшн)
-    // .pipe(cleanCSS({compatibility: 'ie10'})) 
+    // .pipe(cleanCSS()) 
     .pipe(autoprefixer('last 15 version'))
     // Удалить не используемые стили (продакшн)
     // .pipe(uncss({
