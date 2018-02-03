@@ -15,7 +15,7 @@ body{
 	min-width: 320px;
 	position: relative;
 	text-align: center;
-	box-sizing: border-box;
+	// box-sizing: border-box;
 	margin-top: 108px;
 	overflow-x:hidden;
 }
@@ -55,18 +55,6 @@ body{
 	overflow: hidden;
 }
 .circle{
-
-	//Стили для блока
-
-	// width: 400px;
-	// height: 400px;
-	// background: $main-color;
-	// border-radius: 50%;
-	// position: fixed;
-	// right: -106px;
- //    top: -155px;
-	// z-index: -3;
-	// opacity: .3;
 	position: absolute;
 	top: -147px;
 	right: -130px;
@@ -117,8 +105,13 @@ body{
 		font-size: 16px;
 		letter-spacing: 0.1px;
 		z-index: 999;
+		a{
+			text-decoration: none;
+			font-size: 16px;
+			color: #000;
+		}
 		&--active,
-		&:hover{
+		a:hover{
 			color: $main-color;
 			cursor: pointer;
 			&:before{
@@ -158,7 +151,7 @@ body{
 		display: block;
 		width: 40px;
 		height: 40px;
-		margin-top: 15px;
+		margin-top: 25px;
 		cursor: pointer;
 		position: relative;
 		span{

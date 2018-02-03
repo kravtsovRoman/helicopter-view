@@ -11,8 +11,6 @@ body {
   min-width: 320px;
   position: relative;
   text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   margin-top: 108px;
   overflow-x: hidden;
 }
@@ -142,14 +140,20 @@ body {
   z-index: 999;
 }
 
+.menu-desktop__item a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+}
+
 .menu-desktop__item--active,
-.menu-desktop__item:hover {
+.menu-desktop__item a:hover {
   color: #20aa97;
   cursor: pointer;
 }
 
 .menu-desktop__item--active:before,
-.menu-desktop__item:hover:before {
+.menu-desktop__item a:hover:before {
   content: '';
   width: 15px;
   height: 2px;
@@ -187,7 +191,7 @@ body {
   display: block;
   width: 40px;
   height: 40px;
-  margin-top: 15px;
+  margin-top: 25px;
   cursor: pointer;
   position: relative;
 }
@@ -481,6 +485,10 @@ body {
 /* Medium Devices, Desktops */
 
 @media screen and (max-width: 992px) {
+  .container-lines {
+    display: none;
+  }
+
   .header__container {
     padding: 0 15px;
   }
@@ -499,6 +507,7 @@ body {
   }
 
   .offer-container {
+    width: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -617,7 +626,6 @@ body {
     letter-spacing: 0;
     text-align: center;
     line-height: 20px;
-    font-size: 21px;
   }
 
   .offer-title {
@@ -669,10 +677,183 @@ body {
 
   .footer__text {
     padding-top: 35px;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
 /* Extra Small Devices, Phones */
 
+@media screen and (max-width: 590px) {
+  .box-service__img {
+    margin: 0 auto 25px auto;
+  }
+}
+
+/* Extra Small Devices, Phones */
+
+@media screen and (max-width: 480px) {
+  .section__title {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .section__description {
+    margin: 0 5% 16px 5%;
+    text-align: left;
+  }
+
+  .section .box-service__text {
+    width: auto;
+    padding: 0 20px 0 10px;
+    font-size: 16px;
+  }
+
+  .offer-container .box-our-offer,
+  .offer-container .box-our-offer:nth-child(2n) {
+    padding: 0;
+    width: 95%;
+  }
+
+  .header__container .menu-mobile__label {
+    margin-right: 10px;
+  }
+
+  .menu-mobile .nav-mobile {
+    padding: 0;
+  }
+
+  .menu-mobile .nav-mobile__item {
+    padding: 10px;
+    font-size: 2em;
+  }
+}
+
 /* Custom, iPhone Retina */
+
+@media screen and (max-width: 320px) {
+  .header__container {
+    padding: 0;
+  }
+
+  .header__container .logo__img {
+    margin-left: 11px;
+  }
+
+  .header__container .menu-mobile__label {
+    width: 30px;
+    height: 30px;
+    margin-top: 43px;
+  }
+
+  .section__title {
+    padding: 41px 0 33px 24px;
+    font-size: 55px;
+  }
+
+  .section__description {
+    margin: 0 0 0 8%;
+  }
+
+  .section .container__box {
+    margin: 17px auto 0 auto;
+  }
+
+  .box-service__img {
+    margin: 0 auto 0 auto;
+    background-position: 13px -3px;
+  }
+
+  .box-service .service-2 {
+    background-position: -241px -4px;
+  }
+
+  .box-service .service-3 {
+    background-position: -380px -17px;
+  }
+
+  .box-service .service-4 {
+    background-position: -506px -18px;
+  }
+
+  .box-service .service-5 {
+    background-position: -651px -7px;
+  }
+
+  .box-service .service-6 {
+    background-position: -785px -7px;
+  }
+
+  .box-service .service-7 {
+    background-position: -921px 2px;
+  }
+
+  .box-service .service-8 {
+    background-position: -1042px 0px;
+  }
+
+  .box-service .service-9 {
+    background-position: -1191px -11px;
+  }
+
+  .box-service .service-10 {
+    background-position: -111px -13px;
+  }
+
+  .box-service__text,
+  .box-service__slim-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .offer-title {
+    font-size: 45px;
+  }
+
+  .offer-container .box-our-offer__img {
+    margin-bottom: 40px;
+    background-position: 14px 1px;
+  }
+
+  .offer-container .box-our-offer__title {
+    font-size: 18px;
+    margin: 0 0 0 10px;
+  }
+
+  .offer-container .box-our-offer__text {
+    line-height: 28px;
+    font-size: 18px;
+  }
+
+  .offer-container .box-our-offer .offer-2 {
+    background-position: -96px -1px;
+  }
+
+  .offer-container .box-our-offer .offer-3 {
+    background-position: -205px -13px;
+  }
+
+  .offer-container .box-our-offer .offer-4 {
+    background-position: -316px 5px;
+  }
+
+  .offer-container .box-our-offer .offer-5 {
+    background-position: -421px -6px;
+  }
+
+  .offer-container .box-our-offer .offer-6 {
+    background-position: -521px 2px;
+  }
+
+  .offer-container .box-our-offer .offer-7 {
+    background-position: -626px 19px;
+  }
+
+  .footer {
+    height: 112px;
+    margin-top: 61px;
+  }
+
+  .footer__text {
+    margin: 0;
+  }
+}

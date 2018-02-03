@@ -27,6 +27,9 @@
 
 /* Medium Devices, Desktops */
 @media screen and (max-width : 992px) {
+	.container-lines{
+		display: none;
+	}
 	.header{
 		&__container{
 			padding: 0 15px;
@@ -47,6 +50,7 @@
 		}
 	}
 	.offer-container{
+		width: auto;
 		flex-direction: column;
 		.box-our-offer{
 			padding: 60px 70px 0 70px;
@@ -140,7 +144,6 @@
 			letter-spacing: 0;
 			text-align: center;
 			line-height: 20px;
-			font-size: 21px;
 		}
 	}
 	.offer-title {
@@ -184,17 +187,161 @@
     	margin-top: 63px;
     	&__text {
 		    padding-top: 35px;
-		    font-size: 13px;
+		    font-size: 14px;
 		}
 	}
 }
 
 /* Extra Small Devices, Phones */
-@media screen and (max-width : 480px) {
+@media screen and (max-width : 590px) {
+	.box-service__img{
+		margin: 0 auto 25px auto;
+	}
+}
 
+/* Extra Small Devices, Phones */
+@media screen and (max-width : 480px) {
+	.section{
+		&__title{
+			text-align: left;
+			padding-left: 20px;	
+		}
+		&__description{
+			margin: 0 5% 16px 5%;
+			text-align: left;
+		}
+	 	.container__box{
+		}
+		.box-service{
+			&__text {
+				width: auto;
+				padding: 0 20px 0 10px;
+				font-size: 16px;
+			}
+		}
+	}
+	.offer-container .box-our-offer, 
+	.offer-container .box-our-offer:nth-child(2n){
+		padding: 0;
+		width: 95%;
+	}
+	.header__container .menu-mobile__label{
+		margin-right: 10px;
+	}
+	.menu-mobile .nav-mobile{
+		padding: 0;
+		&__item{
+			padding: 10px;
+			font-size: 2em;
+		}
+	}
 }
 
 /* Custom, iPhone Retina */
 @media screen and (max-width : 320px) {
-
+	.header__container{
+		padding: 0;
+		.logo__img{
+			margin-left: 11px;
+		}
+		.menu-mobile__label{
+			width: 30px;
+			height: 30px;
+			margin-top: 43px;
+		}
+	}
+	.section{
+		&__title{
+			padding: 41px 0 33px 24px;
+			font-size: 55px;
+		}
+		&__description{
+			margin: 0 0 0 8%;
+		}
+	}
+	.section .container__box{
+		margin: 17px auto 0 auto;
+	}
+	.box-service{
+		&__img{
+			margin: 0 auto 0 auto;
+			background-position: 13px -3px;
+		}
+		.service-2 {
+		    background-position: -241px -4px;
+		}
+		.service-3 {
+		    background-position: -380px -17px;
+		}
+		.service-4 {
+		    background-position: -506px -18px;
+		}
+		.service-5 {
+		    background-position: -651px -7px;
+		}
+		.service-6 {
+		    background-position: -785px -7px;
+		}
+		.service-7 {
+		    background-position: -921px 2px;
+		}
+		.service-8 {
+		    background-position: -1042px 0px;
+		}
+		.service-9 {
+		    background-position: -1191px -11px;
+		}
+		.service-10 {
+		    background-position: -111px -13px;
+		}
+		&__text, 
+		&__slim-text{
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+	.offer-title{
+		font-size: 45px;
+	}
+	.offer-container{
+		.box-our-offer__img{
+			margin-bottom: 40px;
+			background-position: 14px 1px;
+		}
+		.box-our-offer__title{
+			font-size: 18px;
+			margin: 0 0 0 10px;
+		}
+		.box-our-offer__text{
+			line-height: 28px;
+			font-size: 18px;
+		}
+	}
+	.offer-container .box-our-offer{
+		.offer-2{
+			background-position: -96px -1px;
+		}
+		.offer-3{
+			background-position: -205px -13px;
+		}
+		.offer-4{
+			background-position: -316px 5px;
+		}
+		.offer-5{
+			background-position: -421px -6px;
+		}
+		.offer-6{
+			background-position: -521px 2px;
+		}
+		.offer-7{
+			background-position: -626px 19px;
+		}
+	}
+	.footer {
+	    height: 112px;
+	    margin-top: 61px;
+	    &__text{
+	    	margin: 0;
+	    }
+	}
 }
