@@ -9,7 +9,7 @@
 	}
 	.circle{
 		top: -240px;
-    	right: -175px;
+		right: -175px;
 	}
 	.section {
 		&__description{
@@ -75,8 +75,8 @@
 	}
 	.logo{
 		&__img {
-		    width: 44px;
-		    margin: 5px 0 0 23px;
+			width: 44px;
+			margin: 5px 0 0 23px;
 		}
 		&__text{
 			margin: 7px 0 0 9px;
@@ -86,13 +86,13 @@
 	}
 	.section{
 		&__title {
-		    padding: 40px 0px 44px 0;
-		    font-size: 69px;
+			padding: 40px 0px 44px 0;
+			font-size: 69px;
 		}
 		&__description {
-		    font-size: 1em;
-		    line-height: 30px;
-		    letter-spacing: 0.5px;
+			font-size: 1em;
+			line-height: 30px;
+			letter-spacing: 0.5px;
 		}
 		.services-container{
 			padding: 0;
@@ -109,36 +109,36 @@
 			width: 135px;
 			height: 104px;
 			text-align: center;
-		    margin: 0 0 25px 150px;
-		    background-position: -11px -3px;
-		   }
-		   .service-2 {
-			    background-position: -259px -4px;
-			}
-			.service-3 {
-			    background-position: -398px 5px;
-			}
-			.service-4 {
-			    background-position: -524px 5px;
-			}
-			.service-5 {
-			    background-position: -669px -13px;
-			}
-			.service-6 {
-			    background-position: -805px -13px;
-			}
-			.service-7 {
-			    background-position: -940px -21px;
-			}
-			.service-8 {
-			    background-position: -1061px -21px;
-			}
-			.service-9 {
-			    background-position: -1208px -4px;
-			}
-			.service-10 {
-			    background-position: -130px -4px;
-			}
+			margin: 0 0 25px 150px;
+			background-position: -11px -3px;
+		}
+		.service-2 {
+			background-position: -259px -4px;
+		}
+		.service-3 {
+			background-position: -398px 5px;
+		}
+		.service-4 {
+			background-position: -524px 5px;
+		}
+		.service-5 {
+			background-position: -669px -13px;
+		}
+		.service-6 {
+			background-position: -805px -13px;
+		}
+		.service-7 {
+			background-position: -940px -21px;
+		}
+		.service-8 {
+			background-position: -1061px -21px;
+		}
+		.service-9 {
+			background-position: -1208px -4px;
+		}
+		.service-10 {
+			background-position: -130px -4px;
+		}
 		&__text{
 			margin: 0 auto;
 			letter-spacing: 0;
@@ -147,8 +147,8 @@
 		}
 	}
 	.offer-title {
-	    padding: 100px 0px 44px 8px;
-	    font-size: 58px;
+		padding: 100px 0px 44px 8px;
+		font-size: 58px;
 	}
 	.offer-container{
 		.box-our-offer, 
@@ -183,11 +183,11 @@
 		}
 	} 
 	.footer {
-    	height: 97px;
-    	margin-top: 63px;
-    	&__text {
-		    padding-top: 35px;
-		    font-size: 14px;
+		height: 97px;
+		margin-top: 63px;
+		&__text {
+			padding-top: 35px;
+			font-size: 14px;
 		}
 	}
 }
@@ -210,7 +210,7 @@
 			margin: 0 5% 16px 5%;
 			text-align: left;
 		}
-	 	.container__box{
+		.container__box{
 		}
 		.box-service{
 			&__text {
@@ -268,31 +268,31 @@
 			background-position: 13px -3px;
 		}
 		.service-2 {
-		    background-position: -241px -4px;
+			background-position: -241px -4px;
 		}
 		.service-3 {
-		    background-position: -380px -17px;
+			background-position: -380px -17px;
 		}
 		.service-4 {
-		    background-position: -506px -18px;
+			background-position: -506px -18px;
 		}
 		.service-5 {
-		    background-position: -651px -7px;
+			background-position: -651px -7px;
 		}
 		.service-6 {
-		    background-position: -785px -7px;
+			background-position: -785px -7px;
 		}
 		.service-7 {
-		    background-position: -921px 2px;
+			background-position: -921px 2px;
 		}
 		.service-8 {
-		    background-position: -1042px 0px;
+			background-position: -1042px 0px;
 		}
 		.service-9 {
-		    background-position: -1191px -11px;
+			background-position: -1191px -11px;
 		}
 		.service-10 {
-		    background-position: -111px -13px;
+			background-position: -111px -13px;
 		}
 		&__text, 
 		&__slim-text{
@@ -338,10 +338,10 @@
 		}
 	}
 	.footer {
-	    height: 112px;
-	    margin-top: 61px;
-	    &__text{
-	    	margin: 0;
-	    }
+		height: 112px;
+		margin-top: 61px;
+		&__text{
+			margin: 0;
+		}
 	}
 }

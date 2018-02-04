@@ -1,5 +1,5 @@
 
-// variables
+// Variables
 $main-font: ProximaNovaExtraBold, Verdana, sans-serif;
 $main-color: #20aa97;
 $description-color: #585858;
@@ -20,8 +20,10 @@ body{
 	position: relative;
 	text-align: center;
 	margin-top: 108px;
-	overflow-x:hidden;
+	overflow-x: hidden;
 }
+
+//Preloader
 .preloader{
 	position: fixed;
 	left: 0;
@@ -65,6 +67,8 @@ body{
 		}	
 	}
 }
+
+//Backgroun lines
 .container-lines{
 	width: 100%;
 	height: 100%;
@@ -104,22 +108,33 @@ body{
 	position: absolute;
 	top: -147px;
 	right: -130px;
-	z-index: 5;
+	z-index: 2;
 }
-.header{
+.header{ 
 	width: 100%;
 	max-width: 1700px;
 	height: 108px;
 	position: fixed;
 	top: 0;
-	background: linear-gradient(to bottom, #fff 65%, rgba(255,255,255, 0) 100%);
-	z-index: 2;
+	z-index: 100;
 	&__container{
 		display: flex;
 		justify-content: space-between;
 		padding: 0 70px;
 		height: 100%;
 	}
+}
+.header-bg-top{
+	background: linear-gradient(90deg,
+		rgba(255,255,255,0) 15%,
+		rgba(255,255,255,1) 20%,
+		rgba(255,255,255,1) 80%,
+		rgba(125,185,232,0) 85%);
+}
+.header-bg-middle{
+	background: linear-gradient(180deg,
+		#fff 65%, 
+		rgba(255,255,255, 0) 100%);
 }
 .logo{
 	display: flex;
@@ -149,12 +164,11 @@ body{
 		list-style-type: none;
 		font-size: 16px;
 		letter-spacing: 0.1px;
-		z-index: 10;
-
 		a{
 			text-decoration: none;
 			font-size: 16px;
 			color: #000;
+			z-index: 10;
 		}
 		&--active,
 		a:hover{
@@ -289,12 +303,16 @@ body{
 	&:hover .box-service__text{
 		text-shadow: 7px 7px 4px rgba(150, 150, 150, 1);
 	}
+	&:hover .box-service__img{
+		transform: scale(1.1);
+	}
 	&__img{
 		width: 110px;
 		height: 80px;
 		margin: 0 auto 50px auto;
 		background-image: url("../img/sprite_services.svg");
 		background-position: -7px -20px;
+		transition: $transition;
 	}
 	&__text{
 		width: 235px;
@@ -349,13 +367,16 @@ body{
 .box-our-offer{
 	width: 45%;
 	text-align: left;
-	padding: 60px 60px 0 0;
+	padding: 60px 60px 0 0; 
 	&:hover .box-our-offer__title{
-		transform: scale(1.03);
+		transform: scale(1.03); 
 		color: #000;
 	}
 	&:hover .box-our-offer__text{
 		text-shadow: 10px 5px 20px rgba(150, 150, 150, 1);
+	}
+	&:hover .box-our-offer__img{
+		transform: scale(1.2);
 	}
 	&:nth-child(2n){
 		padding: 60px 0 0 60px;
@@ -382,6 +403,7 @@ body{
 		background: url("../img/sprite_offer.svg") no-repeat, #fbfdfd;
 		background-position: 0 9px;
 		background-size: 750px;
+		transition: $transition;
 	}
 	.offer-2{
 		background-position: -110px 12px;
