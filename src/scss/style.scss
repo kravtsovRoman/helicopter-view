@@ -1,12 +1,16 @@
+
+// variables
 $main-font: ProximaNovaExtraBold, Verdana, sans-serif;
 $main-color: #20aa97;
 $description-color: #585858;
-$main-font-size: 18px;
+$transition: all .3s;
+$animation-enter: section-text 2.5s ease-in 1.8s;
+$animation-box: section-box 1.5s ease-out ;
 
 *{
 	margin: 0;
 	padding: 0;
-	font-size: $main-font-size;
+	font-size: 18px;
 	font-family: $main-font;
 }
 body{
@@ -90,7 +94,6 @@ body{
 		right: 28%;
 	}
 }
-
 .wrapper{
 	max-width: 1700px;
 	margin: 0 auto;
@@ -110,7 +113,6 @@ body{
 	position: fixed;
 	top: 0;
 	background: linear-gradient(to bottom, #fff 65%, rgba(255,255,255, 0) 100%);
-	// box-shadow: 0px 20px 16px 1px rgba(255,255,255,1);
 	z-index: 2;
 	&__container{
 		display: flex;
@@ -123,8 +125,6 @@ body{
 	display: flex;
 	align-items: center;
 	text-decoration: none;
-	animation: 1s menu-item  linear;
-	animation-delay: 2s;
 	&__img{
 		width: 56px;
 		margin: 5px 0 0 12px;
@@ -149,9 +149,7 @@ body{
 		list-style-type: none;
 		font-size: 16px;
 		letter-spacing: 0.1px;
-		z-index: 999;
-		animation: 3s menu-item  linear;
-		animation-delay: 1s;
+		z-index: 10;
 
 		a{
 			text-decoration: none;
@@ -179,6 +177,7 @@ body{
 		padding: 113px 5px 90px 0;
 		text-align: center;
 		font-size: 100px;
+		animation: $animation-enter;
 		&--colorful{
 			position: absolute;
 			font-size: 1em;
@@ -191,6 +190,7 @@ body{
 		line-height: 36px;
 		letter-spacing: 0.1px;
 		color: $description-color;
+		animation: $animation-enter;
 	}
 }
 .menu-mobile{
@@ -261,7 +261,7 @@ body{
 			text-decoration: none;
 			font-size: 2.5em;
 			color: #000;
-			transition: all .2s;
+			transition: $transition;
 			&:hover{
 				text-decoration: underline;
 			}
@@ -271,8 +271,6 @@ body{
 .header .menu__item--active{
 	color: $main-color;
 }
-
-
 .container{
 	display: flex;
 	justify-content: center;
@@ -284,6 +282,8 @@ body{
 }
 .services-container{
 	padding:  0 35px;
+	animation: $animation-enter;
+
 }
 .box-service{
 	&:hover .box-service__text{
@@ -300,7 +300,7 @@ body{
 		width: 235px;
 		letter-spacing: 1px;
 		line-height: 23px;
-		transition: all .3s;
+		transition: $transition;
 	}
 	&__slim-text{
 		color: $description-color;
@@ -334,25 +334,28 @@ body{
 		background-position: -133px -23px;
 	}
 }
-
 .offer-title{
 	padding: 100px 0 34px 5px;
 	font-size: 60px;
 	line-height: 28px;
 }
 .offer-container{
+	position: relative;
+	right: -3000px;
 	width: 1200px;
 	margin: 0 auto;
 	justify-content: flex-start;
-	
 }
 .box-our-offer{
 	width: 45%;
 	text-align: left;
 	padding: 60px 60px 0 0;
 	&:hover .box-our-offer__title{
-		transform: scale(1.08);
+		transform: scale(1.03);
 		color: #000;
+	}
+	&:hover .box-our-offer__text{
+		text-shadow: 10px 5px 20px rgba(150, 150, 150, 1);
 	}
 	&:nth-child(2n){
 		padding: 60px 0 0 60px;
@@ -361,12 +364,13 @@ body{
 		line-height: 28px;
 		font-size: 20px;
 		margin: 46px 0 0 14px;
-		transition: all .5s;
+		transition: $transition;
 	}
 	&__text{
 		color: $description-color;
 		line-height: 24px;
 		margin: 2px 0 0 14px;
+		transition: $transition;
 	}
 	&__img{
 		width: 107px;
@@ -397,6 +401,12 @@ body{
 	.offer-7{
 		background-position: -640px 3px;
 	}
+}
+.box-our-offer__fade-out{
+	animation: $animation-box;
+}
+.right{
+	right: 0;
 }
 .footer{
 	height: 120px;

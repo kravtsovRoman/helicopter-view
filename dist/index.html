@@ -10,6 +10,9 @@
 	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<div class="preloader" id="preloader">
@@ -34,7 +37,7 @@
 		</div> -->
 		<header class="header">
 			<div class="header__container">
-				<a class="header__logo logo" href="index.html" >
+				<a class="header__logo logo" id="logo" href="index.html" >
 					<img class="logo__img" src="img/logo.png" alt="Logo">
 					<p class="logo__text">helicopter
 						<br>
@@ -79,13 +82,12 @@
 						<a href="#" class="nav-mobile__item">blog.</a>
 						<a href="#" class="nav-mobile__item">contacts.</a>
 					</div>
-
 				</div>
 			</div>
 		</header>
 		<main>
 			<section class="section">
-				<h1 class="section__title">
+				<h1 class="section__title"  id="section__title">
 					service
 					<span class="section__title--colorful">.</span>
 				</h1>
@@ -139,9 +141,7 @@
 						<div class="box-service__text">
 							<span class="box-service__slim-text">Serving as a intermediary in
 							</span>
-
 							negotiations
-
 							<span class="box-service__slim-text">with any level of complexity to get the best possible price and terms</span>
 						</div>
 					</div>
@@ -160,9 +160,7 @@
 							<span class="box-service__slim-text">
 								Negotiating the
 							</span>
-
 							relevant legal documents,
-
 							<span class="box-service__slim-text">
 								drafting contracts and legal documentation
 							</span>
@@ -255,12 +253,6 @@
 			</a>.
 		</p>
 	</footer>
-	<!--[if lt IE 9]>
-		<script src="libs/html5shiv/es5-shim.min.js"></script>
-		<script src="libs/html5shiv/html5shiv.min.js"></script>
-		<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-		<script src="libs/respond/respond.min.js"></script>
-	<![endif]-->
 	<script src="js/script.js"></script>
 </body>
 </html>

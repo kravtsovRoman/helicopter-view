@@ -161,10 +161,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  -webkit-animation: 1s menu-item  linear;
-          animation: 1s menu-item  linear;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
 }
 
 .logo__img {
@@ -202,11 +198,7 @@ body {
   list-style-type: none;
   font-size: 16px;
   letter-spacing: 0.1px;
-  z-index: 999;
-  -webkit-animation: 3s menu-item  linear;
-          animation: 3s menu-item  linear;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  z-index: 10;
 }
 
 .menu-desktop__item a {
@@ -236,6 +228,8 @@ body {
   padding: 113px 5px 90px 0;
   text-align: center;
   font-size: 100px;
+  -webkit-animation: section-text 2.5s ease-in 1.8s;
+          animation: section-text 2.5s ease-in 1.8s;
 }
 
 .section__title--colorful {
@@ -250,6 +244,8 @@ body {
   line-height: 36px;
   letter-spacing: 0.1px;
   color: #585858;
+  -webkit-animation: section-text 2.5s ease-in 1.8s;
+          animation: section-text 2.5s ease-in 1.8s;
 }
 
 .menu-mobile {
@@ -335,9 +331,9 @@ body {
   text-decoration: none;
   font-size: 2.5em;
   color: #000;
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .menu-mobile .nav-mobile__item:hover {
@@ -369,6 +365,8 @@ body {
 
 .services-container {
   padding: 0 35px;
+  -webkit-animation: section-text 2.5s ease-in 1.8s;
+          animation: section-text 2.5s ease-in 1.8s;
 }
 
 .box-service:hover .box-service__text {
@@ -387,9 +385,9 @@ body {
   width: 235px;
   letter-spacing: 1px;
   line-height: 23px;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .box-service__slim-text {
@@ -440,6 +438,8 @@ body {
 }
 
 .offer-container {
+  position: relative;
+  right: -3000px;
   width: 1200px;
   margin: 0 auto;
   -webkit-box-pack: start;
@@ -455,10 +455,14 @@ body {
 }
 
 .box-our-offer:hover .box-our-offer__title {
-  -webkit-transform: scale(1.08);
-      -ms-transform: scale(1.08);
-          transform: scale(1.08);
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
   color: #000;
+}
+
+.box-our-offer:hover .box-our-offer__text {
+  text-shadow: 10px 5px 20px #969696;
 }
 
 .box-our-offer:nth-child(2n) {
@@ -469,15 +473,18 @@ body {
   line-height: 28px;
   font-size: 20px;
   margin: 46px 0 0 14px;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .box-our-offer__text {
   color: #585858;
   line-height: 24px;
   margin: 2px 0 0 14px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .box-our-offer__img {
@@ -516,6 +523,15 @@ body {
 
 .box-our-offer .offer-7 {
   background-position: -640px 3px;
+}
+
+.box-our-offer__fade-out {
+  -webkit-animation: section-box 1.5s ease-out;
+          animation: section-box 1.5s ease-out;
+}
+
+.right {
+  right: 0;
 }
 
 .footer {
@@ -613,147 +629,133 @@ body {
   }
 }
 
-@-webkit-keyframes menu-item {
-  0% {
-    position: absolute;
-    top: -100px;
-  }
-
-  60% {
-    top: 7px;
-  }
-
-  70% {
-    top: -7px;
-  }
-
-  80% {
-    top: 3px;
-  }
-
-  90% {
-    top: -3px;
-  }
-
-  99% {
-    top: 0px;
-  }
-
-  100% {
-    position: relative;
-  }
-}
-
-@keyframes menu-item {
-  0% {
-    position: absolute;
-    top: -100px;
-  }
-
-  60% {
-    top: 7px;
-  }
-
-  70% {
-    top: -7px;
-  }
-
-  80% {
-    top: 3px;
-  }
-
-  90% {
-    top: -3px;
-  }
-
-  99% {
-    top: 0px;
-  }
-
-  100% {
-    position: relative;
-  }
-}
-
-@-webkit-keyframes block-item {
+@-webkit-keyframes section-text {
   0% {
     opacity: 0;
-    position: absolute;
-    right: -2000px;
-  }
-
-  60% {
-    right: 7px;
-  }
-
-  70% {
-    right: -7px;
-  }
-
-  75% {
-    right: 5px;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
   }
 
   80% {
-    right: -5px;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 
-  85% {
-    right: 3px;
+  87% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 
   90% {
-    right: -3px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 
-  99% {
-    right: 0px;
+  93% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+
+  97% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 
   100% {
-    position: relative;
     opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
-@keyframes block-item {
+@keyframes section-text {
   0% {
     opacity: 0;
-    position: absolute;
-    right: -2000px;
-  }
-
-  60% {
-    right: 7px;
-  }
-
-  70% {
-    right: -7px;
-  }
-
-  75% {
-    right: 5px;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
   }
 
   80% {
-    right: -5px;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 
-  85% {
-    right: 3px;
+  87% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 
   90% {
-    right: -3px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 
-  99% {
-    right: 0px;
+  93% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+
+  97% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 
   100% {
-    position: relative;
     opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes section-box {
+  0% {
+    right: -3000px;
+  }
+
+  80% {
+    right: 200px;
+  }
+
+  87% {
+    right: -200px;
+  }
+
+  93% {
+    right: 100px;
+  }
+
+  97% {
+    right: -100px;
+  }
+
+  100% {
+    right: 1px;
+  }
+}
+
+@keyframes section-box {
+  0% {
+    right: -3000px;
+  }
+
+  80% {
+    right: 200px;
+  }
+
+  87% {
+    right: -200px;
+  }
+
+  93% {
+    right: 100px;
+  }
+
+  97% {
+    right: -100px;
+  }
+
+  100% {
+    right: 1px;
   }
 }
 /*==========  Desktop First Method  ==========*/
