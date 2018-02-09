@@ -17,7 +17,6 @@ var gulp = require('gulp'),
   });
 });
 
-
 // css
 gulp.task('css', function () {
   return gulp.src('src/scss/**/*.scss')
