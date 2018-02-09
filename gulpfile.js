@@ -24,7 +24,7 @@ gulp.task('css', function () {
   	.pipe(sass().on('error', sass.logError))
     .pipe(concatCss("style.css")) 
     // Минифицировать css (продакшн)
-    // .pipe(cleanCSS()) 
+    .pipe(cleanCSS()) 
     .pipe(autoprefixer('last 15 version'))
     // Удалить не используемые стили (продакшн)
     // .pipe(uncss({
